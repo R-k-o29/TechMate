@@ -1,2 +1,2 @@
 # TechMate
-Learning management System Project
+Learning management System

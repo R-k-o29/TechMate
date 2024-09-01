@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 
 const app=express();
 
-app.use(express.json());
+app.use(express.json()); 
 
 app.use(cors({
     origin: [process.env.FRONTEND_URL],
@@ -20,7 +20,7 @@ app.use('/ping',(req,res)=>{
 
 //3 routes config
 
-app.all('*',()=>{
+app.all('*',(req,res)=>{
     res.status(404).send('OOPS!! 404 Page not Found');
 })
 

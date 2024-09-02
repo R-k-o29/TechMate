@@ -2,7 +2,7 @@ const { lowerCase } = require('lodash');
 const {Schema , model} = require('mongoose');
 
 const userSchema = new Schema({
-  fullname: {
+  fullName: {
     type: String,
     required: [true, "Full name is required"],
     minLength: [5, "Name must be atleast 5 characters"],
